@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Tap to play"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="50dp"
+        />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="▶"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/pause"
+        android:textSize="25dp"
+        android:text= "■" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/play"
+        android:text = "||"
+        android:textSize="25dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
